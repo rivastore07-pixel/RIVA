@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RIVA Store – تسوقي أفضل الإسكربات الطبية بخامات مريحة وأسعار حلوة" />
+  <title>المتجر – RIVA Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body class="shop-body">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon-wrap">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="16" fill="url(#lg1)" />
+            <path d="M17 9v10M17 19c2.8 0 5-1.5 5-4s-2.2-4-5-4H11v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="lg1" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#8D6A8E"/><stop offset="1" stop-color="#D6B3BC"/></linearGradient></defs>
+          </svg>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-main">RIVA</span>
+          <span class="logo-sub">STORE</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="shop.html" class="nav-link active">المتجر</a></li>
+        <li><a href="index.html#about" class="nav-link">من نحن</a></li>
+        <li><a href="index.html#contact" class="nav-link">تواصلي معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-fav-btn" id="navFavBtn" aria-label="المفضلة">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span class="fav-badge" id="favBadge">0</span>
+        </button>
+        <a href="index.html" class="nav-cta nav-cta-outline">الرئيسية</a>
+        <button class="hamburger" id="hamburger" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOP BANNER -->
+  <div class="shop-banner">
+    <div class="shop-banner-bg"></div>
+    <div class="container">
+      <div class="shop-banner-content">
+        <div class="section-tag">كل المنتجات</div>
+        <h1 class="shop-banner-title">متجر <span class="text-gradient">RIVA</span></h1>
+        <p class="shop-banner-sub">إسكربات طبية فاخرة لكل الكوادر الطبية</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters-bar-wrap" id="filtersWrap">
+    <div class="container">
+      <div class="filters-bar">
+        <!-- Search -->
+        <div class="filter-search-wrap">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="searchInput" class="filter-search-input" placeholder="ابحثي عن منتج..." />
+          <button class="search-x" id="searchClear" aria-label="مسح">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="filters-selects">
+          <div class="select-group">
+            <label class="select-label">التصنيف</label>
+            <select id="catFilter" class="filter-select">
+              <option value="">الكل</option>
+              <option value="women">نسائي</option>
+              <option value="men">رجالي</option>
+              <option value="unisex">يونيسكس</option>
+            </select>
+          </div>
+          <div class="select-group">
+            <label class="select-label">المقاس</label>
+            <select id="sizeFilter" class="filter-select">
+              <option value="">كل المقاسات</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="2XL">2XL</option>
+              <option value="3XL">3XL</option>
+            </select>
+          </div>
+          <div class="select-group">
+            <label class="select-label">اللون</label>
+            <select id="colorFilter" class="filter-select">
+              <option value="">كل الألوان</option>
+              <option value="بنفسجي">بنفسجي</option>
+              <option value="وردي">وردي</option>
+              <option value="كحلي">كحلي</option>
+              <option value="أسود">أسود</option>
+              <option value="رمادي">رمادي</option>
+              <option value="أبيض">أبيض</option>
+              <option value="تيل">تيل</option>
+              <option value="نعناعي">نعناعي</option>
+              <option value="سيل بلو">سيل بلو</option>
+            </select>
+          </div>
+          <div class="select-group">
+            <label class="select-label">الترتيب</label>
+            <select id="sortFilter" class="filter-select">
+              <option value="newest">الأحدث</option>
+              <option value="rating">الأعلى تقييماً</option>
+              <option value="price-asc">الأقل سعراً</option>
+              <option value="price-desc">الأعلى سعراً</option>
+            </select>
+          </div>
+          <button class="btn-reset" id="resetBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12a9 9 0 109-9M3 3v6h6"/></svg>
+            إعادة ضبط
+          </button>
+        </div>
+      </div>
+      <div class="active-tags" id="activeTags"></div>
+    </div>
+  </div>
+
+  <!-- MAIN SHOP -->
+  <main class="shop-main">
+    <div class="container">
+      <div class="shop-toolbar">
+        <div class="results-label" id="resultsLabel">جاري التحميل...</div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+      <div class="no-results hidden" id="noResults">
+        <div class="no-results-icon">🔍</div>
+        <h3>مفيش منتجات هنا!</h3>
+        <p>جرب تغير الفلتر أو ابحث بكلمة تانية</p>
+        <button class="btn-primary btn-ripple" onclick="document.getElementById('resetBtn').click()">إعادة ضبط الفلاتر</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox" role="dialog" aria-modal="true" aria-label="عرض سريع للمنتج">
+      <button class="modal-close-btn" id="modalClose" aria-label="إغلاق">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 1l16 16M17 1L1 17" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-inner">
+        <!-- Gallery -->
+        <div class="modal-gallery">
+          <div class="modal-main-wrap">
+            <img id="modalImg" src="" alt="منتج" class="modal-main-img" />
+            <div class="modal-badge-slot" id="modalBadgeSlot"></div>
+            <div class="modal-zoom-tip">🔍 حرّك الفأرة للتكبير</div>
+          </div>
+          <div class="modal-thumbs" id="modalThumbs"></div>
+        </div>
+        <!-- Details -->
+        <div class="modal-details">
+          <div class="modal-brand" id="modalBrand"></div>
+          <h2 class="modal-name" id="modalName"></h2>
+          <div class="modal-rating-row">
+            <div class="modal-stars" id="modalStars"></div>
+            <span class="modal-reviews-count" id="modalReviews"></span>
+          </div>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-orig" id="modalOrig"></span>
+          </div>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-fabric" id="modalFabric"></div>
+
+          <!-- Color -->
+          <div class="modal-opt-group" id="modalColorGroup">
+            <div class="modal-opt-label">اللون: <span class="opt-selected" id="selectedColorLabel"></span></div>
+            <div class="modal-colors" id="modalColors"></div>
+          </div>
+          <!-- Size -->
+          <div class="modal-opt-group" id="modalSizeGroup">
+            <div class="modal-opt-label">المقاس: <span class="opt-selected" id="selectedSizeLabel"></span></div>
+            <div class="modal-sizes" id="modalSizes"></div>
+          </div>
+          <!-- Features -->
+          <ul class="modal-feats" id="modalFeats"></ul>
+
+          <div class="modal-footer-actions">
+            <button class="btn-primary btn-ripple modal-reserve-btn" id="modalReserveBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              احجز دلوقتي عبر واتساب
+            </button>
+            <button class="btn-fav modal-fav" id="modalFavBtn" aria-label="المفضلة">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <p class="modal-note">* اختار المقاس واللون قبل الحجز</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo">
+            <div class="logo-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                <circle cx="17" cy="17" r="16" fill="url(#lg3)"/>
+                <path d="M17 9v10M17 19c2.8 0 5-1.5 5-4s-2.2-4-5-4H11v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs><linearGradient id="lg3" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#8D6A8E"/><stop offset="1" stop-color="#D6B3BC"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="logo-text-wrap"><span class="logo-main">RIVA</span><span class="logo-sub">STORE</span></div>
+          </a>
+          <p class="footer-tagline">إسكربات طبية فاخرة لكل الكوادر الطبية المصرية.</p>
+         <div class="footer-socials">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/201507480809" target="_blank" class="social-link whatsapp" aria-label="واتساب">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+    </svg>
+  </a>
+
+  <!-- Facebook -->
+  
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/riva_medstore?igsh=MTFyOXdhYnFnYTZseA==" target="_blank" class="social-link instagram" aria-label="إنستجرام">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@riva.store52?_r=1&_t=ZS-97xpvNw6d8r" target="_blank" class="social-link tiktok" aria-label="تيك توك">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+    </svg>
+  </a>
+</div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">المتجر</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">كل المنتجات</a></li>
+            <li><a href="shop.html?category=women">نسائي</a></li>
+            <li><a href="shop.html?category=men">رجالي</a></li>
+            <li><a href="shop.html?category=unisex">يونيسكس</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">مساعدة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#about">من نحن</a></li>
+            <li><a href="index.html#contact">تواصل معنا</a></li>
+           
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">تواصلي معنا</h4>
+          <ul class="footer-contact-list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8D6A8E" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg><span>القاهرة، مصر</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#8D6A8E" stroke-width="2"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>‎+20 123 456 7890</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© ٢٠٢٤ RIVA Store. جميع الحقوق محفوظة.</p>
+        <div class="footer-bottom-links"><a href="#">سياسة الخصوصية</a><span>·</span><a href="#">الشروط والأحكام</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="shop.js"></script>
+</body>
+</html>

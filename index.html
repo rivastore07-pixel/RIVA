@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RIVA Store – إسكربات طبية فاخرة بخامات مريحة وأسعار حلوة لكل الكوادر الطبية" />
+  <title>RIVA Store – إسكربات طبية فاخرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon-wrap">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <circle cx="17" cy="17" r="16" fill="url(#logoGrad)" />
+            <path d="M17 9v10M17 19c2.8 0 5-1.5 5-4s-2.2-4-5-4H11v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8D6A8E"/>
+                <stop offset="1" stop-color="#D6B3BC"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-main">RIVA</span>
+          <span class="logo-sub">STORE</span>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+        <li><a href="shop.html" class="nav-link">المتجر</a></li>
+        <li><a href="#about" class="nav-link">من نحن</a></li>
+        <li><a href="#contact" class="nav-link">تواصلي معنا</a></li>
+      </ul>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <a href="shop.html" class="nav-cta">تسوق دلوقتي</a>
+        <button class="hamburger" id="hamburger" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="إسكربات طبية فاخرة" class="hero-img" />
+
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <div class="hero-badge animate-fade">✨ مرحباً بيك في RIVA Store</div>
+        <h1 class="hero-title animate-up">
+         كل اللي  محتاجه<br/>
+          من الإسكربات الطبية<br/>
+          <span class="hero-title-accent">في مكان واحد ❤️</span>
+        </h1>
+        <p class="hero-desc animate-up">
+          سواء دكتور/ة، ممرض/ة، صيدلاني/ة أو طالب/ة...<br/>
+          هتلاقي عندنا خامات مريحة، ألوان شيك، وأسعار حلوة.
+        </p>
+        <div class="hero-actions animate-up">
+          <a href="shop.html" class="btn-primary btn-ripple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.97-1.67l1.38-8.31H6"/></svg>
+            تسوق دلوقتي
+          </a>
+          <a href="https://wa.me/201507480809" target="_blank" class="btn-whatsapp btn-ripple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            كلمنا واتساب
+          </a>
+        </div>
+        <div class="hero-trust animate-up">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>شحن سريع</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>جودة مضمونة</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>أسعار حلوة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+ 
+        <div class="about-content reveal-right">
+          <div class="section-tag">من نحن</div>
+          <h2 class="section-title">مين <span class="text-gradient">RIVA Store</span>؟</h2>
+          <p class="about-text lead-text">
+            إحنا بنوفر إسكربات طبية بجودة ممتازة وخامات مريحة علشان تقدر تشتغل طول اليوم براحة وأناقة.
+          </p>
+          <p class="about-text">
+            بدأنا من حبنا للكوادر الطبية المصرية اللي بتكافح كل يوم. قررنا نجمعلهم في مكان واحد أجمل وأحسن الإسكربات — بخامات تتحمل الورديات الطويلة وبتحافظ على شكلها الجميل.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <span>خامات مختارة بعناية</span>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <span>مقاسات متنوعة للجميع</span>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </div>
+              <span>خدمة عملاء بتساعدك</span>
+            </div>
+          </div>
+          <a href="shop.html" class="btn-primary btn-ripple">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.97-1.67l1.38-8.31H6"/></svg>
+            اتفرج على المنتجات
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">ليه RIVA؟</div>
+        <h2 class="section-title">٤ أسباب تخليك <span class="text-gradient">تختار RIVA</span></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal-up" style="--delay:0s">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="why-title">✔ خامات مريحة</h3>
+          <p class="why-desc">خامات بريميوم ناعمة ومرنة بتستحمل وردية ١٢ ساعة براحة تامة وبدون أي ضغط.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:0.1s">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <h3 class="why-title">✔ أسعار مناسبة</h3>
+          <p class="why-desc">جودة عالية بسعر معقول وكويس. عندنا كل المقاسات والألوان بأسعار تناسب جيبك.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:0.2s">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <h3 class="why-title">✔ شحن سريع</h3>
+          <p class="why-desc">طلبك بيتجهزله خلال ٢٤ ساعة وبيوصلك سريع لأي مكان في مصر. توصيل موثوق.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:0.3s">
+          <div class="why-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="why-title">✔ جودة عالية</h3>
+          <p class="why-desc">كل قطعة بتعدي فحص جودة دقيق. خياطة محكمة وألوان ثابتة بتتحمل الغسيل المتكرر.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- CTA / CONTACT -->
+  <section class="section cta-section" id="contact">
+    <div class="container">
+      <div class="cta-card reveal-up">
+        <div class="cta-blob cta-blob-1"></div>
+        <div class="cta-blob cta-blob-2"></div>
+        <div class="cta-inner">
+          <div class="section-tag">ابدأ دلوقتي</div>
+          <h2 class="cta-title">جاهز تلبس <span class="text-gradient">أجمل إسكراب</span>؟</h2>
+          <p class="cta-sub">تواصل معنا على واتساب وهنساعدك تختار اللي يناسبك بالظبط.</p>
+          <div class="cta-btns">
+            <a href="https://wa.me/201507480809" target="_blank" class="btn-whatsapp-big btn-ripple">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>كلمينا على واتساب</span>
+            </a>
+            <a href="shop.html" class="btn-outline btn-ripple">تسوق دلوقتي</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo">
+            <div class="logo-icon-wrap">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                <circle cx="17" cy="17" r="16" fill="url(#logoGrad2)" />
+                <path d="M17 9v10M17 19c2.8 0 5-1.5 5-4s-2.2-4-5-4H11v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="logoGrad2" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8D6A8E"/><stop offset="1" stop-color="#D6B3BC"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="logo-text-wrap">
+              <span class="logo-main">RIVA</span>
+              <span class="logo-sub">STORE</span>
+            </div>
+          </a>
+          <p class="footer-tagline">إسكربات طبية فاخرة لكل الكوادر الطبية المصرية. راحة وأناقة في مكان واحد.</p>
+         
+<div class="footer-socials">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/201507480809" target="_blank" class="social-link whatsapp" aria-label="واتساب">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+    </svg>
+  </a>
+
+  <!-- Facebook -->
+  
+
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/riva_medstore?igsh=MTFyOXdhYnFnYTZseA==" target="_blank" class="social-link instagram" aria-label="إنستجرام">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="2" y="2" width="20" height="20" rx="5"/>
+      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+    </svg>
+  </a>
+
+  <!-- TikTok -->
+  <a href="https://www.tiktok.com/@riva.store52?_r=1&_t=ZS-97xpvNw6d8r" target="_blank" class="social-link tiktok" aria-label="تيك توك">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+    </svg>
+  </a>
+</div>
+
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="shop.html">المتجر</a></li>
+            <li><a href="shop.html?category=women">نسائي</a></li>
+            <li><a href="shop.html?category=men">رجالي</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">خدمة العملاء</h4>
+          <ul class="footer-links">
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">تواصل معنا</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8D6A8E" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>أسيوط الجديدة . مصر</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8D6A8E" stroke-width="2"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>‎+201507480809</span>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8D6A8E" stroke-width="2"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>info@rivastore.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© ٢٠٢٤ RIVA Store. جميع الحقوق محفوظة. صُنع بـ ❤️ للكوادر الطبية المصرية.</p>
+        <div class="footer-bottom-links">
+          <a href="#">سياسة الخصوصية</a>
+          <span>·</span>
+          <a href="#">الشروط والأحكام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
