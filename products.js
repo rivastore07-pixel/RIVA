@@ -37,7 +37,6 @@ export const products = [
     category: "women",
     badge: " خصم",
     price: 1200,
-   
     rating: 4.9,
     reviews: 218,
     addedDate: 2024,
