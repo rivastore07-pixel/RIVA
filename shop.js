@@ -100,8 +100,11 @@ function renderProducts() {
       : `<span class="card-price">${p.price.toLocaleString('ar-EG')} جنيه</span>`;
 
     card.innerHTML = `
-      <div class="card-img-wrap">
-        <img class="card-img" src="${p.images[0]}" alt="${p.name}" loading="lazy" />
+      
+    
+    <a href="${p.images[0]}" target="_blank" rel="noopener noreferrer">
+  <img class="card-img" src="${p.images[0]}" alt="${p.name}" loading="lazy" />
+</a>
         ${badgeHTML}
         <button class="card-fav-btn ${fav?'is-fav':''}" data-id="${p.id}" aria-label="المفضلة">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="${fav?'var(--accent)':'none'}" stroke="${fav?'var(--accent)':'currentColor'}" stroke-width="2">
