@@ -391,7 +391,7 @@ function whatsapp(p, size, color) {
 `);
 
   window.open(
-    `https://wa.me/201507480809?text=${msg}`,
+    `https://wa.me/201037138294?text=${msg}`,
     "_blank"
   );
 }
