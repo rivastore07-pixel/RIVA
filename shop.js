@@ -449,3 +449,28 @@ if (paramCat && catFilter) catFilter.value = paramCat;
 /* ────────── INIT ────────── */
 applyFilters();
 updateFavCount();
+
+
+
+const viewer = document.getElementById("imageViewer");
+const viewerImg = document.getElementById("viewerImg");
+const closeViewer = document.querySelector(".viewer-close");
+
+document.addEventListener("click", function(e){
+
+    if(e.target.classList.contains("card-img")){
+        viewer.classList.add("show");
+        viewerImg.src = e.target.src;
+    }
+
+});
+
+closeViewer.onclick = () => {
+    viewer.classList.remove("show");
+};
+
+viewer.onclick = (e) => {
+    if(e.target === viewer){
+        viewer.classList.remove("show");
+    }
+};
