@@ -179,9 +179,14 @@
   background:var(--bg-2);
 }
 .card-img {
-  width:100%; height:100%; object-fit:cover;
-  transition:transform .6s var(--ease);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+  transition: transform .6s var(--ease);
 }
+
 .product-card:hover .card-img { transform:scale(1.07); }
 
 /* Badge */
@@ -520,6 +525,7 @@
   .modal-details { padding:16px; }
   .modal-gallery { padding:14px; }
 }
+
 /* ================= MOBILE FIX ================= */
 
 @media (max-width:768px){
